@@ -1,0 +1,107 @@
+/* STYLE INDEX USER */
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.content-panel-footer.without-padding {
+    display: none;
+}
+
+table.datagrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border: solid 2px;
+    color: grey;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
+    position: relative;
+}
+
+.table.datagrid thead {
+    margin-right: 30px;
+}
+
+.table.datagrid thead tr {
+    display: flex;
+    flex-direction: column;
+}
+
+.table.datagrid thead tr th,
+.datagrid tbody {
+    box-shadow: none;
+}
+
+.datagrid tbody tr td {
+    padding: 0;
+    height: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.content-header .page-actions {
+    justify-content: center;
+}
+
+.global-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: flex-start;
+}
+
+.content-header .page-actions .btn+.btn {
+    margin-left: 0;
+}
+
+.content-header-title .title {
+    display: flex;
+    justify-content: center;
+}
+
+.datagrid td.actions-as-dropdown {
+    position: absolute;
+    left: 0;
+    bottom: -8vh;
+}
+
+/* EDIT USER */
+
+#edit-User-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.row .col-md-6.col-xxl-5 {
+    width: 100%;
+}
+
+.row .col-md-6.col-xxl-5 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+section.content-header .page-actions {
+    position: absolute;
+    width: 100%;
+    top: 35vh;
+}
+
+article {
+    position: relative;
+}
+
+/* MOBILE */
+@media screen and (max-width:500px) {
+    
+}

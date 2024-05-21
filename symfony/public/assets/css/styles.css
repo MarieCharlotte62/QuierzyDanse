@@ -1,0 +1,12 @@
+.loginContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.formulaireConnexion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    margin-top: 15vh;
+}

@@ -1,0 +1,71 @@
+# version: '3.8'
+
+# services:
+#   symfony:
+#     build: ./symfony
+#     ports:
+#       - "8000:80"
+#     env_file:
+#       - .env
+#     volumes:
+#       - ./symfony:/var/www/html
+#     depends_on:
+#       - mysql
+#     networks:
+#       - app_network
+
+#   mysql:
+#     image: mysql:5.7
+#     env_file:
+#       - .env
+#     volumes:
+#       - db_data:/var/lib/mysql
+#     networks:
+#       - app_network
+
+#   phpmyadmin:
+#     image: phpmyadmin/phpmyadmin
+#     ports:
+#       - "8080:80"
+#     environment:
+#       PMA_HOST: mysql
+#     depends_on:
+#       - mysql
+#     networks:
+#       - app_network
+
+#   react-docker:
+#     container_name: react-docker
+#     build:
+#       context: ./react-docker
+#     ports:
+#       - "3000:3000"
+#     volumes:
+#       - ./react-docker:/usr/src/app/react-docker
+#       - /usr/src/app/react-docker/node_modules
+#     networks:
+#       - app_network
+
+# volumes:
+#   db_data:
+
+# networks:
+#   app_network:
+#     driver: bridge
+
+services:
+  react-docker:
+    container_name: react-docker
+    build:
+      context: ./react-docker
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./react-docker:/usr/src/app/react-docker
+      - /usr/src/app/react-docker/node_modules
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge

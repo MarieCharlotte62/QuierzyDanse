@@ -1,0 +1,15 @@
+{% extends '@EasyAdmin/layout.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        html, body {
+            overflow-y: auto;
+            scrollbar-width: none; 
+        }
+    </style>
+{% endblock %}
+
+{% block main %}
+    <h1 class="h1 font-weight-normal text-center">Bienvenue dans votre espace administrateur</h1>
+{% endblock %}

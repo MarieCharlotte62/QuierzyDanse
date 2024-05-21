@@ -1,0 +1,27 @@
+/* MOBILE */
+@media screen and (max-width:500px) {
+
+    button {
+        width: 50vw;
+    }
+
+    #inputEmail, #inputPassword {
+        width: auto;
+    }
+
+    label, .oublieMdp {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* TAILLE PETIT */
+    @media screen and (max-height:799px) {
+
+
+    }
+    /* TAILLE NORMALE */
+    @media screen and (min-height:800px) {
+
+}
+}
