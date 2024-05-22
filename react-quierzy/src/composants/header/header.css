@@ -1,0 +1,46 @@
+.navigation {
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #333, #555);
+    z-index: 10;
+}
+
+.navLink {
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+}
+
+/* .navigation .navLink .navText {
+    text-decoration: none;
+    color: white;
+} */
+
+.navigation .navLink .navTextAccueil.activeAccueil {
+    color: blueviolet;
+}
+
+.navigation .navLink .navTextDisciplines.activeDiscipline {
+    color: blueviolet;
+}
+
+.navigation .navLink .navTextProfesseurs.activeProfesseur {
+    color: blueviolet;
+}
+
+.navigation .navLink .navTextFaq.activeFaq {
+    color: blueviolet;
+}
+
+.navigation .navLink .navTextContact.activeContact {
+    color: blueviolet;
+}
+
+.navigation .navLink .navText {
+    text-decoration: none;
+    color: white;
+}
