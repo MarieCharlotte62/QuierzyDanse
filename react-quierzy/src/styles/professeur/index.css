@@ -1,0 +1,18 @@
+.containerProfesseur {
+    display: flex;
+    height: 85vh;
+}
+
+.professeurs {
+    width: 70%;
+    z-index: 1;
+}
+
+.titrePresentation {
+    width: 30%;
+    background: rosybrown;
+}
+
+.titrePresentation h2 {
+    padding-left: 35%;
+}

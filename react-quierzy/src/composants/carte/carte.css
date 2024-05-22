@@ -1,0 +1,64 @@
+.carte {
+  width: 20vw;
+  border: solid;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.carte img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.titreCarte {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4vh;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.titreCarte p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.informationsHoraires {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  box-sizing: border-box;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  display: none;
+}
+
+.titreCarte.expanded {
+  height: 100%;
+}
+
+.titreCarte.expanded .informationsHoraires {
+  display: block;
+  opacity: 1;
+}
+
+.cartes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,12 @@
+.containerDiscipline {
+    display: flex;
+    flex-direction: column;
+}
+
+.titreDiscipline {
+    height: 15vh;
+}
+
+.titreDiscipline p {
+    text-align: center;
+}

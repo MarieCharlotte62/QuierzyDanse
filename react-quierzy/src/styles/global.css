@@ -1,0 +1,20 @@
+@import "./reset/index.css";
+@import "./accueil/index.css";
+@import "./professeur/index.css";
+@import "./faq/index.css";
+@import "./discipline/index.css";
+@import "../composants/header/header.css";
+@import "../composants/presentation/presentation.css";
+@import "../composants/question/question.css";
+@import "../composants/carte/carte.css";
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+section {
+    min-height: 85vh;
+    padding-top: 15vh;
+}

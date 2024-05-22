@@ -1,0 +1,18 @@
+.containerFaq {
+    display: flex;
+    height: 85vh;
+}
+
+.titreFaq {
+    width: 30%;
+    background: lightblue;
+}
+
+.questionsReponses {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    gap: 3vh;
+}

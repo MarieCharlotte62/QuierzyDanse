@@ -1,0 +1,29 @@
+.presentation {
+    border: solid;
+    background: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    width: 110%;
+    z-index: 1;
+    height: 25vh;
+    padding-left: 10px;
+}
+
+.presentation img {
+    width: 20%;
+    max-width: 20%;
+    height: auto;
+}
+
+.textePresentation {
+    width: 80%;
+    padding: 15px;
+}
+
+.presentations {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 10vh;
+    margin-left: 2vw;
+}
