@@ -1,0 +1,101 @@
+form {
+    position: relative;
+}
+
+input, textarea {
+    border-radius: 25px;
+    width: 80%;
+    height: 6vh;
+    margin-bottom: 2vh;
+    padding-left: 10px;
+    font-family: 'Glass Antiqua';
+    font-size: 1.1rem;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+    height: 20vh;
+}
+
+.boutonEnvoyer {
+    width: 60%;
+    height: 5vh;
+    border-radius: 25px;
+    font-family: 'Julius Sans One';
+    font-size: 1.3rem;
+    background-color: #413735;
+    color: white;
+    cursor: pointer;
+}
+
+.envoi {
+    border: solid 2px;
+    width: 25vw;
+    height: 8vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top:30vh;
+    left: 4vw;
+    background: #413735;
+    color: white;
+    border-radius: 25px;
+    font-family: 'Glass Antiqua';
+    font-size: 1.2rem;
+}
+
+.boutonFermer {
+    font-family: 'Julius Sans One';
+    font-size: 1.1rem;
+    background: white;
+    cursor: pointer;
+}
+
+/* RESPONSIVE TABLETTE */
+@media screen and (max-width:1024px) {
+
+    /* TAILLE PETITE */
+    @media screen and (max-height:799px) {
+    
+    }
+  
+    /* TAILLE NORMALE */
+    @media screen and (min-height:1000px) {
+    
+    }
+  
+    /* TAILLE GRANDE */
+    @media screen and (min-height:1100px) {
+    
+    }
+  
+    /* TAILLE TRÈS GRANDE */
+    @media screen and (min-height:1300px) {
+    
+    }
+    
+  }
+  
+  /* RESPONSIVE MOBILE */
+  @media screen and (max-width:500px) {
+  
+    /* TAILLE TRÈS PETIT */
+    @media screen and (max-height:599px) {
+    
+    }
+  
+    /* TAILLE PETIT */
+    @media screen and (min-height:600px) {
+    
+    }
+  
+    /* TAILLE NORMALE */
+    @media screen and (min-height:800px) {
+    
+    }
+  
+  }

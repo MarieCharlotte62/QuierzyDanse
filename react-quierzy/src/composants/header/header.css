@@ -1,6 +1,6 @@
 .navigation {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 15vh;
     display: flex;
     justify-content: space-between;
@@ -9,38 +9,74 @@
     z-index: 10;
 }
 
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    max-width: 60%;
+}
+
 .navLink {
     display: flex;
     justify-content: space-around;
-    width: 80vw;
+    width: 80%;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5rem;
 }
 
-/* .navigation .navLink .navText {
-    text-decoration: none;
-    color: white;
-} */
-
 .navigation .navLink .navTextAccueil.activeAccueil {
-    color: blueviolet;
+    color: #f4daa3;
 }
 
 .navigation .navLink .navTextDisciplines.activeDiscipline {
-    color: blueviolet;
+    color: #cff0b5;
 }
 
 .navigation .navLink .navTextProfesseurs.activeProfesseur {
-    color: blueviolet;
+    color: #ebd4cb;
 }
 
 .navigation .navLink .navTextFaq.activeFaq {
-    color: blueviolet;
+    color: #5f92a6;
 }
 
 .navigation .navLink .navTextContact.activeContact {
-    color: blueviolet;
+    color: #decbaa;
 }
 
 .navigation .navLink .navText {
     text-decoration: none;
     color: white;
+}
+
+.iconeMenu {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .iconeMenu {
+      display: block;
+      width: 10%;
+    }
+
+    .navLink {
+        display: none;
+        flex-direction: column;
+        width: 100vw;
+        position: absolute;
+        align-items: center;
+        height: 85vh;
+        top: 0;
+        margin-top: 15vh;
+        background: linear-gradient(to right, #333, #555);
+        left: -100vw;
+        transition: left 1s ease-in-out;
+    }
+      
+      .navLink.active {
+        display: flex;
+        left: 0;
+      }
 }

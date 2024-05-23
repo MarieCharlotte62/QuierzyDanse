@@ -1,19 +1,36 @@
-function Header() {
-    return (
-      <>
-        <nav className="navigation">
-            <div className="logo"><img src="#" alt="mon logo"/></div>
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
-            <ul className="navLink">
-                <li><a className="navTextAccueil navText" href="#accueil">Accueil</a></li>
-                <li><a href="#discipline" className="navText navTextDisciplines">Disciplines</a></li>
-                <li><a href="#professeur" className="navText navTextProfesseurs">Professeurs</a></li>
-                <li><a href="#faq" className="navText navTextFaq">Faq</a></li>
-                <li><a href="#contact" className="navText navTextContact">Contact</a></li>
-            </ul>
-        </nav>
-      </>
-    );
-  }
-  
-  export default Header;
+const Header = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const toggleCheckbox = () => {
+    setIsChecked(!isChecked);
+  };
+
+  const closeNav = () => {
+    setIsChecked(false);
+  };
+
+  return (
+    <>
+      <nav className="navigation">
+        <div className="logo">
+          <img src="images/header/logo.png" alt="mon logo"/>
+        </div>
+        <div className="iconeMenu" onClick={toggleCheckbox}>
+          {isChecked ? <FaTimes size={40} color="white" /> : <FaBars size={40} color="white" />}
+        </div>
+        <ul className={`navLink ${isChecked ? 'active' : ''}`}>
+          <li><a href="#accueil" className="navTextAccueil navText" onClick={closeNav}>Accueil</a></li>
+          <li><a href="#discipline" className="navText navTextDisciplines" onClick={closeNav}>Disciplines</a></li>
+          <li><a href="#professeur" className="navText navTextProfesseurs" onClick={closeNav}>Professeurs</a></li>
+          <li><a href="#faq" className="navText navTextFaq" onClick={closeNav}>Faq</a></li>
+          <li><a href="#contact" className="navText navTextContact" onClick={closeNav}>Contact</a></li>
+        </ul>
+      </nav>
+    </>
+  );
+}
+
+export default Header;

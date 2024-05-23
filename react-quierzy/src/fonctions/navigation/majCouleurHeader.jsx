@@ -6,8 +6,6 @@ const majCouleurHeader = () => {
     const pageFaq = document.querySelector('.navTextFaq');
     const pageContact = document.querySelector('.navTextContact');
 
-    console.log(pageAccueil);
-
     pageAccueil.classList.remove('activeAccueil');
     pageDiscipline.classList.remove('activeDiscipline');
     pageProfesseur.classList.remove('activeProfesseur');

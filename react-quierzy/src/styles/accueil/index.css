@@ -14,6 +14,10 @@
     grid-row: 1;
     grid-column: 2;
     color: white;
+    font-family: 'Glass Antiqua', sans-serif;
+    font-size: 1.8rem;
+    text-align: end;
+    padding-right: 5%;
 }
 
 .photoAccueil {
@@ -30,28 +34,183 @@
     position: relative;
     grid-row: 1 / -1;
     grid-column: 1;
-    color: white;
 }
 
 .structureSite {
-    background: orange;
     position: absolute;
+    background: #f4daa3;
     left: 5vw;
     top: 15vh;
     width: 20vw;
     height: 40vh;
+    border: solid 3px;
     border-radius: 25px;
     padding: 20px;
+    font-family: 'glass antiqua';
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.5;
+    z-index: 3;
 }
 
 .appelFacebook {
-    background: brown;
+    background: #413735;
     position: absolute;
-    width: 15vw;
-    height: 30vh;
-    border-radius: 25px;
-    padding: 15px;
-    left: 15vw;
+    left: 10vw;
     top: 40vh;
-    z-index: -1;
+    width: 20vw;
+    height: 33vh;
+    border: solid 3px;
+    border-radius: 25px;
 }
+
+.appelFacebook p {
+    text-align: justify;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    line-height: 1.4;
+    font-family: 'Glass Antiqua';
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:1200px) {
+    .structureSite {
+        font-size: 1.4rem;
+    }
+    .appelFacebook p {
+        font-size: 1rem;
+    }
+}
+
+/* RESPONSIVE TABLETTE */
+@media screen and (max-width:1024px) {
+    .containerAccueil {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 85vh;
+        width: 100%;
+    }
+
+    .backgroundAccueil {
+        height: 25vh;
+        width: 100%;
+    }
+
+    .photoAccueil {
+        margin: 0;
+        position: absolute;
+        top: 10vh;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .titreAccueil {
+        position: absolute;
+        width: 60%;
+        text-align: end;
+        right: 0;
+        top: 2vh;
+    }
+
+    .informationsAccueil {
+        height: 60vh;
+        width: 100vw;
+    }
+
+    .structureSite {
+        width: 40vw;
+        height: 30vh;
+        left: 15%;
+        bottom: 4vh;
+        top: auto;
+        font-size: 1.7rem;
+    }
+
+    .appelFacebook {
+        left: 50%;
+        height: 30vh;
+        padding-left: 11vw;
+        bottom: 3vh;
+        top: auto;
+        padding-right: 2vw;
+    }
+
+    .appelFacebook p {
+        position: initial;
+        font-size: 1.6rem;
+    }
+
+    /* TAILLE PETITE */
+    @media screen and (max-height:799px) {
+        .titreAccueil {
+            width: 80%;
+            font-size: 1.3rem;
+        }
+
+        .structureSite {
+            font-size: 1.3rem;
+        }
+
+        .appelFacebook {
+            padding-left: 13vw;
+        }
+
+        .appelFacebook p {
+            font-size: 1.1rem;
+        }
+    
+    }
+  
+    /* TAILLE NORMALE */
+    @media screen and (min-height:1000px) {
+    
+    }
+  
+    /* TAILLE GRANDE */
+    @media screen and (min-height:1100px) {
+        .structureSite {
+            font-size: 1.9rem;
+        }
+
+        .appelFacebook p {
+            font-size: 1.8rem;
+        }
+    
+    }
+  
+    /* TAILLE TRÈS GRANDE */
+    @media screen and (min-height:1300px) {
+        .structureSite {
+            font-size: 2.2rem;
+        }
+
+        .appelFacebook p {
+            font-size: 2.1rem;
+        }
+    
+    }
+    }
+  
+  /* RESPONSIVE MOBILE */
+  @media screen and (max-width:500px) {
+  
+    /* TAILLE TRÈS PETIT */
+    @media screen and (max-height:599px) {
+    
+    }
+  
+    /* TAILLE PETIT */
+    @media screen and (min-height:600px) {
+    
+    }
+  
+    /* TAILLE NORMALE */
+    @media screen and (min-height:800px) {
+    
+    }
+  
+  }
