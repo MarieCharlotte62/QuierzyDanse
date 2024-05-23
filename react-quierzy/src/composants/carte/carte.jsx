@@ -1,37 +1,6 @@
 import React, { useState } from 'react';
 import { useFetchHoraire } from '../../fonctions/api/fetchDiscipline';
 
-// const Carte = ({nomDiscipline, horaires}) => {
-//     const [isChecked, setIsChecked] = useState(false);
-
-//     const expanded = () => {
-//         setIsChecked(!isChecked)
-//     };
-
-//     return (
-//         <div className="carte" onClick={expanded}>
-//             <div><img src={`images/discipline/${nomDiscipline}.png`} alt="{nomDiscipline}" /></div>
-//             <div className={`titreCarte ${isChecked ? 'expanded' : ''}`}>
-//                 <p>{nomDiscipline}</p>
-//                 {isChecked && (
-//                     <div className="informationsHoraires">
-//                         {horaires.map((horaire, index) => (
-//                         <div key={index}>
-//                             <p>
-//                             Groupe: {horaire.horaire_groupe || 'N/A'} <br />
-//                             Détails: {horaire.details || 'N/A'} <br />
-//                             Jour: {horaire.jour} <br />
-//                             Horaires: de {new Date(horaire.heure_debut).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} à {new Date(horaire.heure_fin).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
-//                             </p>
-//                         </div>
-//                         ))}
-//                     </div>
-//                 )}
-//       </div>
-//     </div>
-//   );
-// };
-
 const Carte = ({nomDiscipline, horaires}) => {
     const [isChecked, setIsChecked] = useState(false);
 
@@ -46,12 +15,10 @@ const Carte = ({nomDiscipline, horaires}) => {
             {isChecked && (
                 <div className="informationsHoraires">
                     {horaires.map((horaire, index) => (
-                    <div key={index}>
+                    <div key={index} className='listeInfos'>
                         <p>
-                        Groupe: {horaire.horaire_groupe || 'N/A'} <br />
-                        Détails: {horaire.details || 'N/A'} <br />
-                        Jour: {horaire.jour} <br />
-                        Horaires: de {new Date(horaire.heure_debut).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} à {new Date(horaire.heure_fin).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                        Groupe : {horaire.horaire_groupe || ''} {horaire.details || ''} <br />
+                        Horaires: {horaire.jour} de {new Date(horaire.heure_debut).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} à {new Date(horaire.heure_fin).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                         </p>
                     </div>
                     ))}

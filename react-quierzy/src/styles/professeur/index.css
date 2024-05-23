@@ -10,9 +10,58 @@
 
 .titrePresentation {
     width: 30%;
-    background: rosybrown;
+    background: #ebd4cb;
 }
 
 .titrePresentation h2 {
-    padding-left: 35%;
+    padding-top: 35%;
+    padding-left: 25%;
+    font-family: 'Glass Antiqua';
+    font-size: 1.8rem;
+    text-align: center;
 }
+
+/* RESPONSIVE TABLETTE */
+@media screen and (max-width:1024px) {
+
+    /* TAILLE PETITE */
+    @media screen and (max-height:799px) {
+    
+    }
+  
+    /* TAILLE NORMALE */
+    @media screen and (min-height:1000px) {
+    
+    }
+  
+    /* TAILLE GRANDE */
+    @media screen and (min-height:1100px) {
+    
+    }
+  
+    /* TAILLE TRÈS GRANDE */
+    @media screen and (min-height:1300px) {
+    
+    }
+    
+  }
+  
+  /* RESPONSIVE MOBILE */
+  @media screen and (max-width:500px) {
+  
+    /* TAILLE TRÈS PETIT */
+    @media screen and (max-height:599px) {
+    
+    }
+  
+    /* TAILLE PETIT */
+    @media screen and (min-height:600px) {
+    
+    }
+  
+    /* TAILLE NORMALE */
+    @media screen and (min-height:800px) {
+    
+    }
+  
+  }

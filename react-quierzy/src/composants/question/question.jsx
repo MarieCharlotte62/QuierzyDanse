@@ -1,18 +1,13 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
-const Question = ({ question, reponse }) => {
-    const [isChecked, setIsChecked] = useState(false);
-
-    const expanded = () => {
-        setIsChecked(!isChecked)
-    };
+const Question = ({ question, reponse, isChecked, onClick }) => {
 
     return (
-        <div className="questionReponse">
-            <div className="question" onClick={expanded}>
+        <div className="questionReponse" onClick={onClick}>
+            <div className="question">
                 <p>{question}</p>
-                {isChecked ? <FaChevronUp /> : <FaChevronDown />}
+                {isChecked ? <FaChevronUp size={30} color="#5f92a6"/> : <FaChevronDown size={30} color="#5f92a6"/>}
             </div>
 
             {(isChecked && (

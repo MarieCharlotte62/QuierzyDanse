@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaFacebook } from 'react-icons/fa';
 import { useFetchImageAccueil } from '../fonctions/api/fetchImageAccueil';
 
 function PageAccueil() {
@@ -23,7 +24,8 @@ function PageAccueil() {
                 </div>
 
                 <div className="appelFacebook">
-                    <p>Pour tout savoir sur nos événements à venir, rendez-vous sur notre groupe Facebook</p>
+                    <p>Pour tout savoir sur nos événements à venir, rendez-vous sur notre groupe Facebook 
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook size={20} color="white" /></a></p>
                 </div>
             </div>
         </div>

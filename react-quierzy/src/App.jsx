@@ -1,18 +1,16 @@
-import PageAccueil from "./pages/accueil";
-import PageDiscipline from "./pages/discipline";
-import PageProfesseur from "./pages/professeur";
-import PageFaq from "./pages/faq";
-import scroll from "./fonctions/navigation/scroll";
-import majCouleurHeader from './fonctions/navigation/majCouleurHeader';
+import { useEffect } from "react";
+import {PageAccueil, PageDiscipline, PageProfesseur, PageFaq, PageContact} from './pages';
+import {scroll, majCouleurHeader} from './fonctions/navigation';
 import Header from "./composants/header/header";
-// import { useEffect } from "react";
 
 function App() {
-  scroll();
-  majCouleurHeader();
+  useEffect(() => {
+    majCouleurHeader();
+    scroll();
 
-  window.addEventListener('scroll', majCouleurHeader)
-  window.addEventListener('load', majCouleurHeader)
+    window.addEventListener('scroll', majCouleurHeader)
+    window.addEventListener('load', majCouleurHeader)
+  }, []);
 
   return (
     <>
@@ -21,7 +19,7 @@ function App() {
     <section id="discipline"><PageDiscipline/></section>
     <section id="professeur"><PageProfesseur/></section>
     <section id="faq"><PageFaq/></section>
-    <section id="contact"></section>
+    <section id="contact"><PageContact/></section>
     </>
   );
 }
