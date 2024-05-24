@@ -69,6 +69,27 @@
   
   /* RESPONSIVE MOBILE */
   @media screen and (max-width:500px) {
+    .titreFaq {
+        height: 85vh;
+        position: absolute;
+        width: 100%;
+        background: linear-gradient(to bottom, #5f92a6 50%, white 75%);
+    }
+    .titreFaq h2 {
+        text-align: end;
+        padding: 0 15px;
+    }
+    .titreFaq img {
+        max-width: 50%;
+    }
+    .questionsReponses {
+        height: auto;
+        width: 100%;
+        left: 0;
+        display: flex;
+        align-items: center;
+        margin-top: 12vh;
+    }
   
     /* TAILLE TRÈS PETIT */
     @media screen and (max-height:599px) {

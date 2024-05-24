@@ -37,6 +37,14 @@
     background: #413735;
 }
 
+.adresseClub {
+    font-family: 'Glass Antiqua';
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5px;
+}
+
 .logos {
     position: relative;
     grid-column: 2;
@@ -78,6 +86,10 @@
         align-items: normal;
         top: 20%;
     }
+    .adresseClub {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
     .logos {
         position: absolute;
         bottom: 1vh;
@@ -113,6 +125,13 @@
   
   /* RESPONSIVE MOBILE */
   @media screen and (max-width:500px) {
+    .map {
+        height: 30vh;
+    }
+    .adresseClub {
+        font-size: 1rem;
+        padding: 5px;
+    }
   
     /* TAILLE TRÈS PETIT */
     @media screen and (max-height:599px) {

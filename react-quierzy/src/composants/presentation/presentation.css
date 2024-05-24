@@ -89,6 +89,22 @@
   
   /* RESPONSIVE MOBILE */
   @media screen and (max-width:500px) {
+    .presentation {
+      width: 100%;
+      padding-left: 0;
+    }
+    .textePresentation {
+      padding: 5px;
+      font-size: 1rem;    
+    }
+    .presentations {
+      margin-left: auto;
+    }
+    .presentation img {
+      padding-right: 5px;
+      max-width: 30%;
+      width: 30%;
+    }
   
     /* TAILLE TRÈS PETIT */
     @media screen and (max-height:599px) {
@@ -102,6 +118,9 @@
   
     /* TAILLE NORMALE */
     @media screen and (min-height:800px) {
+      .textePresentation {
+        font-size: 1.1rem;    
+      }
     
     }
   

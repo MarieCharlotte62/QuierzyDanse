@@ -84,6 +84,9 @@
   
   /* RESPONSIVE MOBILE */
   @media screen and (max-width:500px) {
+    .question p, .reponse {
+        font-size: 1rem;
+    }
   
     /* TAILLE TRÈS PETIT */
     @media screen and (max-height:599px) {
