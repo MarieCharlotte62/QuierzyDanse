@@ -55,6 +55,22 @@
   
   /* RESPONSIVE MOBILE */
   @media screen and (max-width:500px) {
+    .containerProfesseur {
+        position: relative;
+    }
+    .professeurs {
+        height: 85vh;
+        position: absolute;
+        width: 100%;
+    }
+    .titrePresentation {
+        height: 85vh;
+        position: absolute;
+        width: 100%;
+    }
+    .titrePresentation h2 {
+        padding-top: 10%;
+    }
   
     /* TAILLE TRÈS PETIT */
     @media screen and (max-height:599px) {

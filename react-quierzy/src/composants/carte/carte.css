@@ -145,6 +145,12 @@
 
 /* RESPONSIVE MOBILE */
 @media screen and (max-width:500px) {
+  .carte img {
+    max-width: 160px;
+  }
+  .informationsHoraires {
+    font-size: 0.7rem
+  }
 
   /* TAILLE TRÈS PETIT */
   @media screen and (max-height:599px) {
@@ -158,6 +164,18 @@
 
   /* TAILLE NORMALE */
   @media screen and (min-height:800px) {
+    .carte img {
+      max-width: 180px;
+    }
+    .informationsHoraires {
+      font-size: 0.9rem;
+    }
+    .cartes {
+      margin: auto;
+    }
+    .titreCarte {
+      height: auto;
+    }
   
   }
 

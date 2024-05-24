@@ -65,6 +65,12 @@ textarea {
         width: 40%;
         font-size: 1.7rem;
     }
+    .envoi {
+        height: fit-content;
+        width: 25vw;
+        left: 35%;
+        top: 56%;
+    }
 
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {
@@ -96,6 +102,11 @@ textarea {
   
   /* RESPONSIVE MOBILE */
   @media screen and (max-width:500px) {
+    .envoi {
+        width: 40vw;
+        left: 27%;
+        top: 54%;
+    }
   
     /* TAILLE TRÈS PETIT */
     @media screen and (max-height:599px) {

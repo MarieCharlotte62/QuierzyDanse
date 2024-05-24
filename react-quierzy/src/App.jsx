@@ -8,8 +8,8 @@ function App() {
     majCouleurHeader();
     scroll();
 
-    window.addEventListener('scroll', majCouleurHeader)
     window.addEventListener('load', majCouleurHeader)
+    window.addEventListener('scroll', majCouleurHeader)
   }, []);
 
   return (
