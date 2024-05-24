@@ -23,9 +23,16 @@
 
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
+    .titrePresentation h2 {
+        padding-left: 0;
+        padding-top: 25%;
+    }
 
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {
+        .titrePresentation h2 {
+            font-size: 1.5rem;
+        }
     
     }
   

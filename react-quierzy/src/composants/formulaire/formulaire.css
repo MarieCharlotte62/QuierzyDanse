@@ -57,9 +57,23 @@ textarea {
 
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
+    input, textarea {
+        width: 60%;
+        font-size: 1.4rem;
+    }
+    .boutonEnvoyer {
+        width: 40%;
+        font-size: 1.7rem;
+    }
 
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {
+        input, textarea {
+            font-size: 1.2rem;
+        }
+        .boutonEnvoyer {
+            font-size: 1.5rem;
+        }
     
     }
   

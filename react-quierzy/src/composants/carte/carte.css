@@ -58,7 +58,7 @@
   display: none;
   font-family: 'Glass Antiqua';
   font-size: 1.2rem;
-  text-align: center;
+  text-align: justify;
 }
 
 .listeInfos {
@@ -84,24 +84,60 @@
 
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
+  .carte img {
+    max-width: 250px;
+  }
+
+  .cartes {
+    margin: auto 10vw;
+  }
+
+  .informationsHoraires {
+    font-size: 1.1rem;
+  }
 
   /* TAILLE PETITE */
   @media screen and (max-height:799px) {
+    .carte img {
+      max-width: 180px;
+    }
+    .cartes {
+      margin: 2vh 0;
+    }
+    .informationsHoraires {
+      font-size: 0.8rem;
+    }
+    .titreCarte {
+      font-size: 1rem;
+    }
   
   }
 
   /* TAILLE NORMALE */
   @media screen and (min-height:1000px) {
-  
+
   }
 
   /* TAILLE GRANDE */
   @media screen and (min-height:1100px) {
+    .carte img {
+      max-width: 280px;
+    }
+    .informationsHoraires {
+      font-size: 1.3rem;
+    }
+
   
   }
 
   /* TAILLE TRÈS GRANDE */
   @media screen and (min-height:1300px) {
+    .carte img {
+      max-width: 350px;
+    }
+    .informationsHoraires {
+      font-size: 1.5rem;
+    }
   
   }
   

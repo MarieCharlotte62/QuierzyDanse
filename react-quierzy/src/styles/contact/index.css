@@ -24,6 +24,19 @@
     text-align: center;
 }
 
+.renseignements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map {
+    width: 50%;
+    height: 35vh;
+    border-radius: 25px;
+    background: #413735;
+}
+
 .logos {
     position: relative;
     grid-column: 2;
@@ -42,12 +55,38 @@
     font-size: 1.5rem;
 }
 
-.logoFb, .logoTel {
+.logoFb, .logoTel, .logoMap {
     cursor: pointer;
 }
 
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
+    .containerContact {
+        width: 100%;
+        margin: 0 0;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .formulaire {
+        position: relative;
+    }
+    .renseignements {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .logos {
+        position: absolute;
+        bottom: 1vh;
+        right: 4vw;
+        padding-right: 0;
+        width: 100%;
+    }
+    .logos .numTel {
+        top: -4vh;
+    }
 
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {

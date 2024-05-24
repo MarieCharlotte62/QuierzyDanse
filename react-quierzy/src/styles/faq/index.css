@@ -32,9 +32,21 @@
 
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
+    .containerFaq {
+        position: relative;
+    }
+    .questionsReponses {
+        align-items: normal;
+        position: absolute;
+        left: 10vw;
+        margin-top: 15vh;
+    }
 
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {
+        .titreFaq {
+            font-size: 1.2rem;
+        }
     
     }
   
