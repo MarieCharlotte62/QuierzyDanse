@@ -75,7 +75,8 @@
     .renseignements {
         position: absolute;
         width: 100%;
-        height: 100%;
+        align-items: normal;
+        top: 20%;
     }
     .logos {
         position: absolute;
