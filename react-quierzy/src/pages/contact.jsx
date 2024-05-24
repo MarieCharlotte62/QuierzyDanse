@@ -5,7 +5,7 @@ import { FaFacebook, FaPhone, FaMapMarkedAlt } from 'react-icons/fa';
 function PageContact() {
     const [showNumTel, setShowNumTel] = useState(false);
     const [showMap, setShowMap] = useState(false);
-    const [width, setWidth] = useState(0)
+    const [width, setWidth] = useState(null)
 
     const handleWindowResize = () => {
         setWidth(window.innerWidth);
@@ -37,7 +37,7 @@ function PageContact() {
             </div>
 
             <div className="renseignements">
-                {showMap | width > 1024 && <div className='map'></div>}
+            {(showMap || width > 1024) && <div className='map'></div>}
             </div>
 
             <div className="logos">
