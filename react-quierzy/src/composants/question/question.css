@@ -34,14 +34,33 @@
 
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
+    .questionReponse {
+        background: white;
+        width: 80vw;
+    }
+    .question {
+        min-height: 6vh;
+    }
 
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {
+        .question p {
+            font-size: 1.1rem;
+        }
+        .reponse {
+            font-size: 1rem;
+        }
     
     }
   
     /* TAILLE NORMALE */
     @media screen and (min-height:1000px) {
+        .question p {
+            font-size: 1.4rem;
+        }
+        .reponse {
+            font-size: 1.3rem;
+        }
     
     }
   
@@ -52,6 +71,12 @@
   
     /* TAILLE TRÈS GRANDE */
     @media screen and (min-height:1300px) {
+        .question p {
+            font-size: 1.5rem;
+        }
+        .reponse {
+            font-size: 1.5rem;
+        }
     
     }
     

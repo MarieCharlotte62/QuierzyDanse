@@ -21,6 +21,8 @@
     font-size: 1.5rem;
     line-height: 1.4;
     text-align: justify;
+    display: flex;
+    align-items: center;
 }
 
 .presentations {
@@ -37,9 +39,31 @@
 
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
+  .presentation {
+    width: 125%;
+  }
+  .presentation img {
+    width: 30%;
+    max-width: 30%;
+  }
+  .textePresentation {
+    width: 70%;
+    font-size: 1.4rem;
+  }
+  .presentations {
+    margin-top: 15vh;
+  }
 
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {
+      .textePresentation {
+        width: 80%;
+        font-size: 1rem;
+      }
+      .presentation img {
+        width: 20%;
+        max-width: 20%;
+      }
     
     }
   
@@ -55,6 +79,9 @@
   
     /* TAILLE TRÈS GRANDE */
     @media screen and (min-height:1300px) {
+      .textePresentation {
+        font-size: 1.8rem;
+      }
     
     }
     

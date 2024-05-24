@@ -11,9 +11,19 @@
 
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
+  .titreDiscipline {
+    height: 5vh;
+}
+
+  .titreDiscipline h2 {
+      padding-top: 1vh;
+  }
 
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {
+      .titreDiscipline {
+        font-size: 1.5rem;
+    }
     
     }
   
@@ -24,7 +34,7 @@
   
     /* TAILLE GRANDE */
     @media screen and (min-height:1100px) {
-    
+
     }
   
     /* TAILLE TRÈS GRANDE */
