@@ -6,20 +6,27 @@ const Formulaire = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
+  /**
+ * Gère le changement de valeur dans les champs de formulaire.
+ * Met à jour l'état de formData avec la nouvelle valeur du champ modifié.
+ *
+ * @param {Event} e - L'événement de changement déclenché par l'input.
+ */
   const handleChange = (e) => {
     const inputName = e.target.name; // Récupère le nom de l'input (prenom, email, objet, message)
     const inputValue = e.target.value; // Récupère la valeur saisie dans l'input
-  
-    // Créer une nouvelle copie de l'objet formData avec la nouvelle valeur
     const updatedFormData = {
       ...formData, // Copie tous les champs existants de formData
       [inputName]: inputValue // Met à jour le champ correspondant au nom de l'input avec la nouvelle valeur
     };
-  
-    // Met à jour l'état formData avec le nouvel objet
-    setFormData(updatedFormData);
+    setFormData(updatedFormData); // Met à jour l'état formData avec le nouvel objet
   };
 
+  /**
+ * Gère la soumission du formulaire.
+ *
+ * @param {Event} e - L'objet événement provenant de la soumission du formulaire.
+ */
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -112,4 +119,4 @@ const Formulaire = () => {
     );
 };
 
-export { Formulaire };
+export default Formulaire;

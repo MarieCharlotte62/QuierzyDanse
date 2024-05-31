@@ -10,22 +10,14 @@
 @import "../composants/carte/carte.css";
 @import "../composants/formulaire/formulaire.css";
 @import "./erreur/index.css";
-
 @font-face {
     font-family: "Glass Antiqua";
     src: url("../../public/fonts/glassAntiqua/GlassAntiqua-Regular.ttf") format('truetype');
   }
-
 @font-face {
     font-family: "Julius Sans One";
     src: url("../../public/fonts/JuliusSansOne/JuliusSansOne-Regular.ttf") format('truetype');
 }
-
-@font-face {
-    font-family: "Srisakdi";
-    src: url("../../public/fonts/srisakdi/Srisakdi-Regular.ttf") format('truetype');
-}
-
 html {
     scroll-behavior: smooth;
 }

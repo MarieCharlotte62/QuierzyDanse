@@ -16,7 +16,7 @@ const Header = () => {
     <>
       <nav className="navigation">
         <div className="logo">
-          <img src="images/header/logo.png" alt="mon logo"/>
+          <img src="images/header/logo.webp" alt="logo du club de danse de quierzy"/>
         </div>
         <div className="iconeMenu" onClick={toggleCheckbox}>
           {isChecked ? <FaTimes size={40} color="white" /> : <FaBars size={40} color="white" />}

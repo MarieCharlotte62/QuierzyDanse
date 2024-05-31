@@ -10,6 +10,10 @@ function App() {
 
     window.addEventListener('load', majCouleurHeader)
     window.addEventListener('scroll', majCouleurHeader)
+    return () => {
+      window.removeEventListener('load', majCouleurHeader);
+      window.removeEventListener('scroll', majCouleurHeader);
+    };
   }, []);
 
   return (

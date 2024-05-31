@@ -2,7 +2,6 @@
     display: flex;
     min-height: 85vh;
 }
-
 .titreFaq {
     position: relative;
     width: 30%;
@@ -13,14 +12,12 @@
     text-align: center;
     padding-top: 5%;
 }
-
 .titreFaq img {
     position: absolute;
     max-width: 100%;
     bottom: 0;
     left: 0;
 }
-
 .questionsReponses {
     width: 70%;
     display: flex;
@@ -29,7 +26,6 @@
     margin-top: 10vh;
     gap: 3vh;
 }
-
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
     .containerFaq {
@@ -41,69 +37,34 @@
         left: 10vw;
         margin-top: 15vh;
     }
-
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {
         .titreFaq {
             font-size: 1.2rem;
         }
-    
     }
-  
-    /* TAILLE NORMALE */
-    @media screen and (min-height:1000px) {
-    
-    }
-  
-    /* TAILLE GRANDE */
-    @media screen and (min-height:1100px) {
-    
-    }
-  
-    /* TAILLE TRÈS GRANDE */
-    @media screen and (min-height:1300px) {
-    
-    }
-    
   }
-  
-  /* RESPONSIVE MOBILE */
-  @media screen and (max-width:500px) {
-    .titreFaq {
-        height: 85vh;
-        position: absolute;
-        width: 100%;
-        background: linear-gradient(to bottom, #5f92a6 50%, white 75%);
-    }
-    .titreFaq h2 {
-        text-align: end;
-        padding: 0 15px;
-    }
-    .titreFaq img {
-        max-width: 50%;
-    }
-    .questionsReponses {
-        height: auto;
-        width: 100%;
-        left: 0;
-        display: flex;
-        align-items: center;
-        margin-top: 12vh;
-    }
-  
-    /* TAILLE TRÈS PETIT */
-    @media screen and (max-height:599px) {
-    
-    }
-  
-    /* TAILLE PETIT */
-    @media screen and (min-height:600px) {
-    
-    }
-  
-    /* TAILLE NORMALE */
-    @media screen and (min-height:800px) {
-    
-    }
-  
-  }
+/* RESPONSIVE MOBILE */
+@media screen and (max-width:500px) {
+.titreFaq {
+    height: 85vh;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to bottom, #5f92a6 50%, white 75%);
+}
+.titreFaq h2 {
+    text-align: end;
+    padding: 0 15px;
+}
+.titreFaq img {
+    max-width: 50%;
+}
+.questionsReponses {
+    height: auto;
+    width: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 12vh;
+}
+}

@@ -12,6 +12,7 @@ export const useFetchHoraire = () => {
                 }
                 const data = await response.json();
                 const horaires = data['hydra:member'];
+                console.log(horaires);
 
                 const nomDiscipline = (url) => {
                     switch (url) {
@@ -44,15 +45,15 @@ export const useFetchHoraire = () => {
                 const regroupement = {};
 
                 horaires.forEach(horaire => {
-                    const discipline = horaire.horaire_discipline;
-                    const groupe = horaire.horaire_groupe;
+                    const discipline = nomDiscipline(horaire.horaire_discipline); // nom de la dicispline en fonction de l'url
+                    const groupe = nomGroupe(horaire.horaire_groupe); // nom du groupe en fonction de l'url
 
                     if (!regroupement[discipline]) {
                         regroupement[discipline] = [];
                     }
                     regroupement[discipline].push({
-                        nom_discipline: nomDiscipline(discipline),
-                        horaire_groupe: nomGroupe(groupe),
+                        nom_discipline: discipline,
+                        horaire_groupe: groupe,
                         details: horaire.details,
                         jour: horaire.jour,
                         heure_debut: horaire.heure_debut,
@@ -61,7 +62,8 @@ export const useFetchHoraire = () => {
                 });
 
                 setDisciplines(regroupement);
-                
+                console.log(Object.values(disciplines))
+
             } catch (error) {
                 console.error('Erreur lors de la récupération des données:', error);
             }

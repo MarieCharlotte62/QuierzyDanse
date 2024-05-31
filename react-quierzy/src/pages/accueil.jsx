@@ -20,12 +20,13 @@ function PageAccueil() {
 
             <div className="informationsAccueil">
                 <div className="structureSite">
-                    <p>Découvrez nos danse, consultez notre FAQ pour obtenir des informations rapidement, et n'hésitez pas à prendre contact avec nous pour des informations supplémentaires.</p>
+                    <p>Découvrez nos danses, consultez notre FAQ pour obtenir des informations rapidement, et n'hésitez pas à prendre contact avec nous pour des informations supplémentaires.</p>
                 </div>
 
                 <div className="appelFacebook">
                     <p>Pour tout savoir sur nos événements à venir, rendez-vous sur notre groupe Facebook 
-                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook size={20} color="white" /></a></p>
+                        <a className="logoFbAccueil" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook size={20} color="white" /></a>
+                    </p>
                 </div>
             </div>
         </div>

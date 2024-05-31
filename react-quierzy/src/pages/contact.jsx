@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Formulaire } from "../composants/formulaire/formulaire";
-import Map from '../composants/map/map';
+import Formulaire from "../composants/formulaire/formulaire";
+// import Map from '../composants/map/map';
 import { FaFacebook, FaPhone, FaMapMarkedAlt } from 'react-icons/fa';
 
 function PageContact() {
@@ -39,14 +39,14 @@ function PageContact() {
 
             <div className="renseignements">
             {(showMap || width > 1024) && <div className='map'>
-                <Map/>
+                {/* <Map/> */}
                 <p className='adresseClub'>salle Charlemagne <br/> 02300 QUIERZY</p>
                 </div>}
             </div>
 
             <div className="logos">
                 {width <= 1024 && <FaMapMarkedAlt className='logoMap' size={50} color="white" onClick={clickLogoMap}/>}
-                <a className="logoFb" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook size={50} color="white" /></a>
+                <a className="logoFbContact" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook size={50} color="white" /></a>
                 <FaPhone className="logoTel" size={40} color="white" onClick={clickLogoTel} />
                 {showNumTel && <p className="numTel">03-21-00-00-00</p>}
             </div>

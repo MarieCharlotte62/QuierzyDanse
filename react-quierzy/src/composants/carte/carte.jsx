@@ -10,7 +10,7 @@ const Carte = ({nomDiscipline, horaires}) => {
 
     return (
         <div className="carte" onClick={expanded}>
-            <div><img src={`images/discipline/${nomDiscipline}.png`} alt="{nomDiscipline}" /></div>
+            <div><img src={`images/discipline/${nomDiscipline}.webp`} alt="{nomDiscipline}" loading="lazy"/></div>
             <div className={`titreCarte ${isChecked ? 'expanded' : ''}`}><p>{nomDiscipline}</p>
             {isChecked && (
                 <div className="informationsHoraires">
@@ -41,4 +41,4 @@ const Cartes = () => {
     );
 };
 
-export { Carte, Cartes};
+export default Cartes;

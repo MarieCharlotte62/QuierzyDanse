@@ -1,4 +1,4 @@
-import { Presentations } from "../composants/presentation/presentation";
+import Presentations from "../composants/presentation/presentation";
 
 function PageProfesseur() {
     return (
