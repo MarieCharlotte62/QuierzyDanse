@@ -1,27 +1,29 @@
+/**
+ * Met à jour la couleur du header en fonction de la page actuelle.
+ *
+ * Cette fonction vérifie le hash dans l'URL pour déterminer la page actuelle.
+ * Elle parcourt ensuite un tableau d'éléments de navigation, en retirant
+ * la classe 'active' de chacun. Enfin, elle ajoute la classe 'active'
+ * à l'élément correspondant à la page actuelle.
+ */
 const majCouleurHeader = () => {
     const pageActuelle = window.location.hash.substring(1);
-    const pageAccueil = document.querySelector('.navTextAccueil');
-    const pageDiscipline = document.querySelector('.navTextDisciplines');
-    const pageProfesseur = document.querySelector('.navTextProfesseurs');
-    const pageFaq = document.querySelector('.navTextFaq');
-    const pageContact = document.querySelector('.navTextContact');
+    const pages = [
+        { section: 'accueil', element: document.querySelector('.navTextAccueil') },
+        { section: 'discipline', element: document.querySelector('.navTextDisciplines') },
+        { section: 'professeur', element: document.querySelector('.navTextProfesseurs') },
+        { section: 'faq', element: document.querySelector('.navTextFaq') },
+        { section: 'contact', element: document.querySelector('.navTextContact') }
+    ];
 
-    pageAccueil.classList.remove('activeAccueil');
-    pageDiscipline.classList.remove('activeDiscipline');
-    pageProfesseur.classList.remove('activeProfesseur');
-    pageFaq.classList.remove('activeFaq');
-    pageContact.classList.remove('activeContact');
+    pages.forEach(page => page.element.classList.remove('active'));
 
-    if (pageActuelle === 'accueil') {
-        pageAccueil.classList.add('activeAccueil')
-    } else if (pageActuelle === 'discipline') {
-        pageDiscipline.classList.add('activeDiscipline')
-    } else if (pageActuelle === 'professeur') {
-        pageProfesseur.classList.add('activeProfesseur')
-    } else if (pageActuelle === 'faq') {
-        pageFaq.classList.add('activeFaq')
-    } else if (pageActuelle === 'contact') {
-        pageContact.classList.add('activeContact')
-    }
-}
+    pages.forEach(page => {
+        if (page.section === pageActuelle) {
+            page.element.classList.add('active');
+        }
+    });
+};
+
 export default majCouleurHeader;
+

@@ -4,73 +4,37 @@
     font-family: 'Glass Antiqua';
     font-size: 1.8rem;
 }
-
 .titreDiscipline h2 {
     padding-top: 5vh;
 }
-
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
   .titreDiscipline {
     height: 5vh;
 }
-
   .titreDiscipline h2 {
       padding-top: 1vh;
   }
-
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {
       .titreDiscipline {
         font-size: 1.5rem;
     }
-    
-    }
-  
-    /* TAILLE NORMALE */
-    @media screen and (min-height:1000px) {
-    
-    }
-  
-    /* TAILLE GRANDE */
-    @media screen and (min-height:1100px) {
-
-    }
-  
-    /* TAILLE TRÈS GRANDE */
-    @media screen and (min-height:1300px) {
-    
-    }
-    
   }
-  
-  /* RESPONSIVE MOBILE */
-  @media screen and (max-width:500px) {
+  }
+/* RESPONSIVE MOBILE */
+@media screen and (max-width:500px) {
+  .titreDiscipline {
+    font-size: 1.2rem;
+  }
+  /* TAILLE NORMALE */
+  @media screen and (min-height:800px) {
     .titreDiscipline {
-      font-size: 1.2rem;
+      font-size: 1.8rem;
+      height: 15vh;
     }
-  
-    /* TAILLE TRÈS PETIT */
-    @media screen and (max-height:599px) {
-    
+    .titreDiscipline h2 {
+      padding-top: 3vh;
     }
-  
-    /* TAILLE PETIT */
-    @media screen and (min-height:600px) {
-    
-    }
-  
-    /* TAILLE NORMALE */
-    @media screen and (min-height:800px) {
-      .titreDiscipline {
-        font-size: 1.8rem;
-        height: 15vh;
-      }
-
-      .titreDiscipline h2 {
-        padding-top: 3vh;
-      }
-    
-    }
-  
   }
+}

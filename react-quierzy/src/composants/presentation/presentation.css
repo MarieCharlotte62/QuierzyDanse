@@ -7,13 +7,10 @@
     height: 25vh;
     padding-left: 10px;
 }
-
 .presentation img {
-    width: 20%;
+    width: 250px;
     max-width: 20%;
-    height: auto;
 }
-
 .textePresentation {
     width: 80%;
     padding: 15px;
@@ -24,7 +21,6 @@
     display: flex;
     align-items: center;
 }
-
 .presentations {
     display: flex;
     flex-direction: column;
@@ -32,11 +28,9 @@
     margin-top: 10vh;
     margin-left: 2vw;
 }
-
 .presentations > div:nth-child(even) {
     flex-direction: row-reverse;
   }
-
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
   .presentation {
@@ -53,7 +47,6 @@
   .presentations {
     margin-top: 15vh;
   }
-
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {
       .textePresentation {
@@ -64,64 +57,36 @@
         width: 20%;
         max-width: 20%;
       }
-    
     }
-  
-    /* TAILLE NORMALE */
-    @media screen and (min-height:1000px) {
-    
-    }
-  
-    /* TAILLE GRANDE */
-    @media screen and (min-height:1100px) {
-    
-    }
-  
     /* TAILLE TRÈS GRANDE */
     @media screen and (min-height:1300px) {
       .textePresentation {
         font-size: 1.8rem;
       }
-    
     }
-    
   }
-  
-  /* RESPONSIVE MOBILE */
-  @media screen and (max-width:500px) {
-    .presentation {
-      width: 100%;
-      padding-left: 0;
-    }
+/* RESPONSIVE MOBILE */
+@media screen and (max-width:500px) {
+  .presentation {
+    width: 100%;
+    padding-left: 0;
+  }
+  .textePresentation {
+    padding: 5px;
+    font-size: 1rem;    
+  }
+  .presentations {
+    margin-left: auto;
+  }
+  .presentation img {
+    padding-right: 5px;
+    max-width: 30%;
+    width: 30%;
+  }
+  /* TAILLE NORMALE */
+  @media screen and (min-height:800px) {
     .textePresentation {
-      padding: 5px;
-      font-size: 1rem;    
+      font-size: 1.1rem;    
     }
-    .presentations {
-      margin-left: auto;
-    }
-    .presentation img {
-      padding-right: 5px;
-      max-width: 30%;
-      width: 30%;
-    }
-  
-    /* TAILLE TRÈS PETIT */
-    @media screen and (max-height:599px) {
-    
-    }
-  
-    /* TAILLE PETIT */
-    @media screen and (min-height:600px) {
-    
-    }
-  
-    /* TAILLE NORMALE */
-    @media screen and (min-height:800px) {
-      .textePresentation {
-        font-size: 1.1rem;    
-      }
-    
-    }
-  
   }
+}

@@ -1,4 +1,4 @@
-import { Cartes } from "../composants/carte/carte";
+import Cartes from "../composants/carte/carte";
 
 function PageDiscipline() {
 

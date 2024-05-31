@@ -8,15 +8,11 @@
     background: linear-gradient(to right, #333, #555);
     z-index: 10;
 }
-
-.logo {
-    width: 20%;
-}
-
 .logo img {
-    max-width: 60%;
+    width: 200px;
+    height: auto;
+    max-width: 90%
 }
-
 .navLink {
     display: flex;
     justify-content: space-around;
@@ -24,59 +20,61 @@
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1.5rem;
 }
-
-.navigation .navLink .navTextAccueil.activeAccueil {
+/* .navigation .navLink .navTextAccueil.activeAccueil {
     color: #f4daa3;
 }
-
 .navigation .navLink .navTextDisciplines.activeDiscipline {
     color: #cff0b5;
 }
-
 .navigation .navLink .navTextProfesseurs.activeProfesseur {
     color: #ebd4cb;
 }
-
 .navigation .navLink .navTextFaq.activeFaq {
     color: #5f92a6;
 }
-
 .navigation .navLink .navTextContact.activeContact {
     color: #decbaa;
+} */
+.navigation .navLink .navTextAccueil.active {
+    color: #f4daa3;
 }
-
+.navigation .navLink .navTextDisciplines.active {
+    color: #cff0b5;
+}
+.navigation .navLink .navTextProfesseurs.active {
+    color: #ebd4cb;
+}
+.navigation .navLink .navTextFaq.active {
+    color: #5f92a6;
+}
+.navigation .navLink .navTextContact.active {
+    color: #decbaa;
+}
 .navigation .navLink .navText {
     text-decoration: none;
     color: white;
 }
-
 .iconeMenu {
     display: none;
     cursor: pointer;
 }
-
 @media (max-width: 800px) {
-    .iconeMenu {
-      display: block;
-      width: 15%;
-    }
-
     .navLink {
-        display: none;
-        flex-direction: column;
-        width: 100vw;
-        position: absolute;
-        align-items: center;
-        height: 85vh;
-        top: 0;
-        margin-top: 15vh;
         background: linear-gradient(to right, #333, #555);
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 85vh;
+        position: absolute;
+        top: 15vh;
         left: -100vw;
         transition: left 1s ease-in-out;
     }
-      
-      .navLink.active {
-        display: flex;
+    .navLink.active {
         left: 0;
-      }
+    }
+    .iconeMenu {
+        display: block;
+        width: 15%;
+    }
 }

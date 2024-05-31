@@ -1,7 +1,6 @@
 form {
     position: relative;
 }
-
 input, textarea {
     border-radius: 25px;
     width: 80%;
@@ -11,13 +10,11 @@ input, textarea {
     font-family: 'Glass Antiqua';
     font-size: 1.1rem;
 }
-
 textarea {
     resize: none;
     overflow: auto;
     height: 20vh;
 }
-
 .boutonEnvoyer {
     width: 60%;
     height: 5vh;
@@ -28,7 +25,6 @@ textarea {
     color: white;
     cursor: pointer;
 }
-
 .envoi {
     border: solid 2px;
     width: 25vw;
@@ -47,14 +43,12 @@ textarea {
     font-family: 'Glass Antiqua';
     font-size: 1.2rem;
 }
-
 .boutonFermer {
     font-family: 'Julius Sans One';
     font-size: 1.1rem;
     background: white;
     cursor: pointer;
 }
-
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
     input, textarea {
@@ -71,7 +65,6 @@ textarea {
         left: 35%;
         top: 56%;
     }
-
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {
         input, textarea {
@@ -80,47 +73,13 @@ textarea {
         .boutonEnvoyer {
             font-size: 1.5rem;
         }
-    
     }
-  
-    /* TAILLE NORMALE */
-    @media screen and (min-height:1000px) {
-    
-    }
-  
-    /* TAILLE GRANDE */
-    @media screen and (min-height:1100px) {
-    
-    }
-  
-    /* TAILLE TRÈS GRANDE */
-    @media screen and (min-height:1300px) {
-    
-    }
-    
   }
-  
-  /* RESPONSIVE MOBILE */
-  @media screen and (max-width:500px) {
-    .envoi {
-        width: 40vw;
-        left: 27%;
-        top: 54%;
-    }
-  
-    /* TAILLE TRÈS PETIT */
-    @media screen and (max-height:599px) {
-    
-    }
-  
-    /* TAILLE PETIT */
-    @media screen and (min-height:600px) {
-    
-    }
-  
-    /* TAILLE NORMALE */
-    @media screen and (min-height:800px) {
-    
-    }
-  
-  }
+/* RESPONSIVE MOBILE */
+@media screen and (max-width:500px) {
+.envoi {
+    width: 40vw;
+    left: 27%;
+    top: 54%;
+}
+}

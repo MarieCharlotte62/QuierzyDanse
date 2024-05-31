@@ -1,18 +1,15 @@
 .containerProfesseur {
     display: flex;
-    height: 85vh;
+    min-height: 85vh;
 }
-
 .professeurs {
     width: 70%;
     z-index: 1;
 }
-
 .titrePresentation {
     width: 30%;
     background: #ebd4cb;
 }
-
 .titrePresentation h2 {
     padding-top: 35%;
     padding-left: 25%;
@@ -20,71 +17,35 @@
     font-size: 1.8rem;
     text-align: center;
 }
-
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
     .titrePresentation h2 {
         padding-left: 0;
         padding-top: 25%;
     }
-
     /* TAILLE PETITE */
     @media screen and (max-height:799px) {
         .titrePresentation h2 {
             font-size: 1.5rem;
         }
-    
     }
-  
-    /* TAILLE NORMALE */
-    @media screen and (min-height:1000px) {
-    
-    }
-  
-    /* TAILLE GRANDE */
-    @media screen and (min-height:1100px) {
-    
-    }
-  
-    /* TAILLE TRÈS GRANDE */
-    @media screen and (min-height:1300px) {
-    
-    }
-    
   }
-  
-  /* RESPONSIVE MOBILE */
-  @media screen and (max-width:500px) {
-    .containerProfesseur {
-        position: relative;
-    }
-    .professeurs {
-        height: 85vh;
-        position: absolute;
-        width: 100%;
-    }
-    .titrePresentation {
-        height: 85vh;
-        position: absolute;
-        width: 100%;
-    }
-    .titrePresentation h2 {
-        padding-top: 10%;
-    }
-  
-    /* TAILLE TRÈS PETIT */
-    @media screen and (max-height:599px) {
-    
-    }
-  
-    /* TAILLE PETIT */
-    @media screen and (min-height:600px) {
-    
-    }
-  
-    /* TAILLE NORMALE */
-    @media screen and (min-height:800px) {
-    
-    }
-  
-  }
+/* RESPONSIVE MOBILE */
+@media screen and (max-width:500px) {
+.containerProfesseur {
+    position: relative;
+}
+.professeurs {
+    height: 85vh;
+    position: absolute;
+    width: 100%;
+}
+.titrePresentation {
+    height: 85vh;
+    position: absolute;
+    width: 100%;
+}
+.titrePresentation h2 {
+    padding-top: 10%;
+}
+}

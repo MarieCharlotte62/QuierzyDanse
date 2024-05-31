@@ -2,7 +2,7 @@
     height: 85vh;
     width: 70%;
     margin: 0 auto;
-    background-image: url(../../../public/images/contact/salle_de_danse.png);
+    background-image: url(../../../public/images/contact/salle-de-danse.webp);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,33 +10,28 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 80% 20%;
 }
-
 .titreContact {
     color: white;
     font-family: 'Julius Sans One';
     font-size: 1.8rem;
     padding: 5%;
 }
-
 .formulaire {
     grid-row: 1 / -1;
     width: 100%;
     text-align: center;
 }
-
 .renseignements {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .map {
     width: 50%;
     height: 35vh;
     border-radius: 25px;
     background: #413735;
 }
-
 .adresseClub {
     font-family: 'Glass Antiqua';
     color: white;
@@ -44,7 +39,6 @@
     text-align: center;
     padding: 5px;
 }
-
 .logos {
     position: relative;
     grid-column: 2;
@@ -54,7 +48,6 @@
     align-items: flex-end;
     padding-right: 10px;
 }
-
 .logos .numTel {
     position: absolute;
     top: 5vh;
@@ -62,11 +55,9 @@
     font-family: 'Julius Sans One';
     font-size: 1.5rem;
 }
-
-.logoFb, .logoTel, .logoMap {
+.logoFbContact, .logoTel, .logoMap {
     cursor: pointer;
 }
-
 /* RESPONSIVE TABLETTE */
 @media screen and (max-width:1024px) {
     .containerContact {
@@ -100,52 +91,14 @@
     .logos .numTel {
         top: -4vh;
     }
-
-    /* TAILLE PETITE */
-    @media screen and (max-height:799px) {
-    
-    }
-  
-    /* TAILLE NORMALE */
-    @media screen and (min-height:1000px) {
-    
-    }
-  
-    /* TAILLE GRANDE */
-    @media screen and (min-height:1100px) {
-    
-    }
-  
-    /* TAILLE TRÈS GRANDE */
-    @media screen and (min-height:1300px) {
-    
-    }
-    
-  }
-  
-  /* RESPONSIVE MOBILE */
-  @media screen and (max-width:500px) {
-    .map {
-        height: 30vh;
-    }
-    .adresseClub {
-        font-size: 1rem;
-        padding: 5px;
-    }
-  
-    /* TAILLE TRÈS PETIT */
-    @media screen and (max-height:599px) {
-    
-    }
-  
-    /* TAILLE PETIT */
-    @media screen and (min-height:600px) {
-    
-    }
-  
-    /* TAILLE NORMALE */
-    @media screen and (min-height:800px) {
-    
-    }
-  
-  }
+}
+/* RESPONSIVE MOBILE */
+@media screen and (max-width:500px) {
+.map {
+    height: 30vh;
+}
+.adresseClub {
+    font-size: 1rem;
+    padding: 5px;
+}
+}
