@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Formulaire from "../composants/formulaire/formulaire";
-// import Map from '../composants/map/map';
+import MapGoogle from '../composants/map/map';
 import { FaFacebook, FaPhone, FaMapMarkedAlt } from 'react-icons/fa';
 
 function PageContact() {
@@ -39,7 +39,7 @@ function PageContact() {
 
             <div className="renseignements">
             {(showMap || width > 1024) && <div className='map'>
-                {/* <Map/> */}
+                <MapGoogle/>
                 <p className='adresseClub'>salle Charlemagne <br/> 02300 QUIERZY</p>
                 </div>}
             </div>
