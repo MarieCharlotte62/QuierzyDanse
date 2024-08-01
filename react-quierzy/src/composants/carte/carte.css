@@ -56,6 +56,7 @@
 .listeInfos {
   margin-bottom: 3vh;
 }
+
 .titreCarte.expanded {
   height: 100%;
 }
@@ -63,6 +64,7 @@
   display: block;
   opacity: 1;
 }
+
 .cartes {
   display: flex;
   flex-wrap: wrap;

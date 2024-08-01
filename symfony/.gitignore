@@ -37,3 +37,7 @@ yarn-error.log
 # Logs and caches
 *.log
 *.cache
+
+###> liip/imagine-bundle ###
+/public/media/cache/
+###< liip/imagine-bundle ###
